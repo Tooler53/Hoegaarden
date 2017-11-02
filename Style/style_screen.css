@@ -220,6 +220,11 @@ a:visited
   display: none;
 }
 /* --------------- /базовые настройки ---------*/
+body
+{
+	width: 100%;
+	margin: auto;
+}
 .header{/*Параметры блока header*/
 	margin: auto;
 	width: 900px;
