@@ -14,7 +14,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-  margin: 0;
   font-family: 'Ubuntu', sans-serif;
 }
 article,
@@ -223,8 +222,9 @@ a{color: white;}
 /* --------------- /базовые настройки ---------*/
 body
 {
-	width: 100%;
+	width: 1000px;
 	margin: auto;
+	height: 2342px;
 }
 .header{/*Параметры блока header*/
 	margin: auto;
@@ -248,6 +248,7 @@ body
 	height: 596px;
 	max-width: 90%;
 	min-width: 500px;
+	filter: blur(5px);
 }
 .History{/*Праметры блока History*/
 	margin: auto;
@@ -257,6 +258,7 @@ body
 	height: 596px;
 	max-width: 90%;
 	min-width: 500px;
+	filter: blur(5px);
 }
 .About_Beer{/*Праметры блока About beer*/
 	margin: auto;
@@ -266,6 +268,7 @@ body
 	height: 629px;
 	max-width: 90%;
 	min-width: 500px;
+	filter: blur(5px);
 }
 .Sponsorship{/*Праметры блока Sponsorship*/
 	margin: auto;
@@ -275,13 +278,14 @@ body
 	height: 276px;
 	max-width: 90%;
 	min-width: 500px;
+	filter: blur(5px);
 }
 .footer{/*Праметры блока Footer*/
 	margin: auto;
 	background-color: #ddba66;
-	background-size: cover;	
 	width: 900px;
 	height: 85px;
+	filter: blur(5px);
 }
  .Size{ /*Праметры кнопок в header*/
  	width:95px;
@@ -340,6 +344,7 @@ body
 	font-size: 71px;
 	color: #ddba66;
 	letter-spacing: 0.1px;
+	z-index: 2;
 	text-shadow: 5px 0px 0px black;	
 }
 .TextBrand/*Параметры текста под Hoegaarden*/
@@ -438,8 +443,8 @@ body
 .Button_BarLocator/*Параметры кнопки Bar locator*/
 {
 	z-index: 2;
-	bottom: 576px;
-	left: 507px;
+	top: 100px;
+	left: 95px;
 	width: 285px;
 	height: 40px;
 	background-color: #314a9b;	
@@ -534,7 +539,7 @@ a:visited/*Эффект при посещенной ссылке*/
 	border: 1px solid black;
 	z-index: 66;
 	background: white;
-	bottom: 31px;
+	bottom: 22px;
 }
 .Banner_text/*Параметры текста Banner*/
 {

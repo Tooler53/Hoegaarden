@@ -4,6 +4,11 @@ jQuery('Document').ready(function ()/*Ждет полной прогрузки �
 	jQuery('#Yes').on('click',function()/*Если кнопка с ID="#Yes" нажата выполнить функцию*/
 	{
 		jQuery('#Banner').remove();/*Удалить div с ID="#Banner"*/
+		jQuery('.Brand').css('filter','none');
+		jQuery('.History').css('filter','none');
+		jQuery('.About_Beer').css('filter','none');
+		jQuery('.Sponsorship').css('filter','none');
+		jQuery('.footer').css('filter','none');
 		window.onscroll=function(){};/*Очистить положение скролла*/
 	});
 	jQuery('#No').on('click',function(){/*Если кнопка с ID="#No" нажата выполнить функцию*/
