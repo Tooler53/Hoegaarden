@@ -1,5 +1,6 @@
 jQuery('Document').ready(function ()/*Ждет полной прогрузки документа и запускает функцию*/
 {
+	jQuery("body").css("overflow","hidden");
     window.onscroll = function(){window.scrollTo(0, 0);};/*Фиксирует положение скролла в самом верху*/
 	jQuery('#Yes').on('click',function()/*Если кнопка с ID="#Yes" нажата выполнить функцию*/
 	{
@@ -9,6 +10,7 @@ jQuery('Document').ready(function ()/*Ждет полной прогрузки �
 		jQuery('.About_Beer').css('filter','none');
 		jQuery('.Sponsorship').css('filter','none');
 		jQuery('.footer').css('filter','none');
+		jQuery("body").css("overflow","auto");
 		window.onscroll=function(){};/*Очистить положение скролла*/
 	});
 	jQuery('#No').on('click',function(){/*Если кнопка с ID="#No" нажата выполнить функцию*/
