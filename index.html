@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="Style/Normalize.css">
 		<link rel="stylesheet" type="text/css" href="Style/style_screen.css" media="screen"/>
-		<link rel="viewport" content="wigth=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="Style/style_handheld.css" media="handheld"/>
 		<link rel="shortcut icon" href="/image/favicon.png" type="image/png">
 		<title>Hoegaarden</title>
 		<meta charset = "utf-8">
@@ -11,15 +10,21 @@
 	</head>
 	<body>
 		<script src="Scripts/script.js"></script>
-		<div class = "header">
+		<div class = "header">	
+		<div>
+			<img src="Assets/logohoe.png" class="logo">	
+			</div>		
 			<div>
-				<img src="Assets/logohoe.png" class="logo position">
+			<div class="HeaderButtonStyle">
+				<a href="#Brand"><input type="button" class="HeaderButton Size position" value="Brand"></input></a>
+				<a href="#History"><input type="button" class="HeaderButton Size position" value="History"></input></a>
 			</div>
-			<a href="#Brand"><input type="button" class="Brand_Down Size position" value="Brand"></input></a>
-			<a href="#History"><input type="button" class="History_Down Size position" value="History"></input></a>
-			<a href="#About_Beer"><input type="button" class="Beer_Down Size position" value="About beer"></input></a>
-			<a href="#Sponsorship"><input type="button" class="Sponsorship_Down Size position" value="Sponsorship"></input></a>
-			<div id="Banner" class="banner position">
+			<div class="HeaderButtonStyle2">
+				<a href="#About_Beer"><input type="button" class="HeaderButton Size position" value="About beer"></input></a>
+				<a href="#Sponsorship"><input type="button" class="HeaderButton Size position" value="Sponsorship"></input></a>
+			</div>
+			</div>		
+		  <div id="Banner" class="banner position">
 				<p class="Banner_text position">
 					Are you already<br>
 					18 years old?
@@ -104,11 +109,13 @@
 			<a href="#About_beer">About beer</a><br>
 			<a href="#Sponsorship">Sponsorship</a><br>
 		</div>
-		<a href="https://www.facebook.com/"><input type="image" src="Assets/facebook.png" class="Link_face position LinkBottom"></input></a>
-		<a href="https://vk.com/"><input type="image" src="Assets/vkontakte.png" class="Link_VK position LinkBottom"></input></a>
-		<a href="https://twitter.com/"><input type="image" src="Assets/tweeter.png" class="Link_tweet position LinkBottom"></input></a>
-		<a href="https://www.instagram.com/"><input type="image" src="Assets/insta.png" class="Link_insta position LinkBottom"></input></a>
-		<a href="http://www.rss.ru/"><input type="image" src="Assets/rss.png" class="Link_rss position LinkBottom"></input></a>
+		<div class="SocialLinks">
+			<a href="https://www.facebook.com/"><input type="image" src="Assets/facebook.png" class="Link_face position LinkBottom"></input></a>
+			<a href="https://vk.com/"><input type="image" src="Assets/vkontakte.png" class="Link_VK position LinkBottom"></input></a>
+			<a href="https://twitter.com/"><input type="image" src="Assets/tweeter.png" class="Link_tweet position LinkBottom"></input></a>
+			<a href="https://www.instagram.com/"><input type="image" src="Assets/insta.png" class="Link_insta position LinkBottom"></input></a>
+			<a href="http://www.rss.ru/"><input type="image" src="Assets/rss.png" class="Link_rss position LinkBottom"></input></a>
+		</div>
 	</div>
 	</body>
 </html>

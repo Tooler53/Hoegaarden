@@ -1,11 +1,20 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
 html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-  width: 100%;
-  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
 }
 article,
 aside,
@@ -39,6 +48,11 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none;
+  color: white;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
 }
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -192,6 +206,23 @@ canvas {
 template {
   display: none;
 }
+a:active{
+	color: white;
+	text-decoration: none;
+}
+a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+a{color: white;}
 [hidden] {
   display: none;
+}
+/* --------------- /базовые настройки ---------*/
+body
+{
+	width: 100%;
+	margin: auto;
+	height: 2342px;
 }
